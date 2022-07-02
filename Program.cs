@@ -69,7 +69,7 @@ if (modelName == "Product")
         if(productRepository.ExistsById(id))
         {
             productRepository.Disable(id);
-            Console.WriteLine($"Produto {id} habilitado com sucesso!");
+            Console.WriteLine($"Produto {id} desabilitado com sucesso!");
         }
         else
         {
