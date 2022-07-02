@@ -150,7 +150,7 @@ if (modelName == "Product")
     {
         if(productRepository.GetAll().Any())
         {
-            Console.WriteLine("A média dos preços é {0}", productRepository.GetAveragePrice());
+            Console.WriteLine("A média dos preços é R${0}", productRepository.GetAveragePrice());
         }
         else
         {
