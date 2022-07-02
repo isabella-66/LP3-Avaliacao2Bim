@@ -58,7 +58,7 @@ if (modelName == "Product")
         }
         else
         {
-            Console.WriteLine($"Produto {id} não encontrado");
+            Console.WriteLine($"Produto {id} não encontrado.");
         }
     }
 
@@ -73,7 +73,7 @@ if (modelName == "Product")
         }
         else
         {
-            Console.WriteLine($"Produto {id} não encontrado");
+            Console.WriteLine($"Produto {id} não encontrado.");
         }
     }
 
@@ -125,7 +125,7 @@ if (modelName == "Product")
         }
         else
         {
-            Console.WriteLine($"Nenhum produto encontrado com preço maior que R${price}");
+            Console.WriteLine($"Nenhum produto encontrado com preço maior que R${price}.");
         }
     }
 
@@ -142,7 +142,7 @@ if (modelName == "Product")
         }
         else
         {
-            Console.WriteLine($"Nenhum produto encontrado com preço menor que R${price}");
+            Console.WriteLine($"Nenhum produto encontrado com preço menor que R${price}.");
         }
     }
 
@@ -150,7 +150,7 @@ if (modelName == "Product")
     {
         if(productRepository.GetAll().Any())
         {
-            Console.WriteLine("A média dos preços é R${0}", productRepository.GetAveragePrice());
+            Console.WriteLine("A média dos preços é R${0}!", productRepository.GetAveragePrice());
         }
         else
         {
